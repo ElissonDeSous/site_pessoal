@@ -1,4 +1,4 @@
-import Link from "next/link"
+
 export default function Rodape(){
     return(
          <footer className="  bg-black  text-white h-[200px] flex justify-center items-center">
