@@ -16,7 +16,16 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "ESsoftwares",
   description: "A ESsoftware é especializada no desenvolvimento de sites institucionais e landing pages de alta performance, utilizando as melhores tecnologias do mercado",
-};
+
+    icons: {
+      icon: "/favicon.ico", // Ícone padrão
+      shortcut: "/favicon.ico", // Ícone de atalho (iOS)
+      apple: "/apple-touch-icon.png", // Ícone para dispositivos Apple (opcional)
+    },
+  };
+  
+  
+
 
 export default function RootLayout({
   children,

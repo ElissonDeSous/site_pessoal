@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import ladingpage from './img/ladingpage.jpg'
@@ -7,6 +9,21 @@ import Topo from "./components/topo/topo";
 
 
 export default function Home() {
+function Abrirmodal()
+{
+  const AbrirModal = document.getElementById('modal')
+  const atendimento = document.getElementById('atendimento')
+
+   atendimento?.classList.toggle('hidden') 
+}
+
+function fecharModal(){
+   const atendimento = document.getElementById('atendimento')
+   atendimento?.classList.toggle('hidden')
+}
+
+
+
   return (
   
     <div className="bg-[#222831]">
@@ -17,7 +34,10 @@ export default function Home() {
           <div className="banner flex flex-col justify-center items-center lg:w-full h-[600px] ">
               <h1 className="text-white flex ml-5  font-bold text-3xl lg:text-5xl ">Inovação e tecnologia para impulsionar o seu negócio</h1>
 
-              <Link className= " rounded-xl mt-9 bg-red-500 w-[300px] font-bold flex justify-center items-center h-10"  href='https://wa.me/12996322883?text=Olá, quero saber mais sobre os serviços da ESsoftware. Como funciona o processo de criação de um site?' target="_blank">Agendamento Online</Link>
+              <button  onClick={Abrirmodal}  className="rounded-xl mt-9 bg-red-500 w-[300px] font-bold flex justify-center items-center h-10">Agendamento online</button>
+
+
+          
           </div>
 
           <div className="flex flex-col items-center justify-center">
@@ -40,7 +60,28 @@ export default function Home() {
               </div>
              </div>
           </div>
-
+           
+           <div id="atendimento" className=" text-black mt-2 flex hidden justify-center items-center fixed top-0 left-0 bg-black/50 w-[100%] h-full">
+              <div className="flex flex-col justify-between bg-white w-[400px] h-[500px]">
+                   <div className=" flex flex-col items-center   h-[400px]">
+                    <h1 className="p-2 text-2xl lg:text-3xl">Atendimento Online</h1>
+                      <form action="" className="w-full h-[400px] flex flex-col justify-around items-center">
+                     
+                         <input placeholder="Digite seu nome " className="border-solid border-black border-2 w-[300px] h-[50px] rounded-md" type="text" name="" id="" />
+                         <input placeholder="Digite seu email " className="border-solid border-black border-2 w-[300px] h-[50px] rounded-md" type="email" name="" id="" />
+                       
+                         <textarea name="" id="" className="border-solid border-black border-2 w-[300px] h-[100px] rounded-md" placeholder="Digite uma mensagem" >
+                         
+                          
+                         </textarea>
+                         <input type="button" className="bg-green-500 p-2 h-[50px] w-[200px] rounded-md" value="Enviar" />
+                      </form>
+                   </div>
+                   <div className="flex justify-center">
+                      <button onClick={fecharModal} className="text-black w-[200px] bg-red-500 p-2 mb-5">fechar</button>
+                   </div>
+              </div>
+           </div>
         </div>
      
       </div>
