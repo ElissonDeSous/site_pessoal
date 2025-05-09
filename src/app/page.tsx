@@ -67,18 +67,18 @@ function fecharModal(){
                     <h1 className="p-2 text-2xl lg:text-3xl">Atendimento Online</h1>
                       <form action="" className="w-full h-[300px] flex flex-col justify-around items-center">
                      
-                         <input placeholder="Digite seu nome " className="border-solid border-black border-2 lg:w-[300px] h-[50px] rounded-md" type="text" name="" id="" />
-                         <input placeholder="Digite seu email " className="border-solid border-black border-2 lg:w-[300px] h-[50px] rounded-md" type="email" name="" id="" />
+                         <input placeholder="Digite seu nome " className="border-solid pl-10 border-black border-2 lg:w-[300px] h-[50px] rounded-md" type="text" name="" id="" />
+                         <input placeholder="Digite seu email " className="border-solid pl-10 border-black border-2 lg:w-[300px] h-[50px] rounded-md" type="email" name="" id="" />
                        
-                         <textarea name="" id="" className="border-solid border-black border-2 w-[200px] lg:w-[300px] h-[100px] rounded-md" placeholder="Digite uma mensagem" >
+                         <textarea name="" id="" className="border-solid pl-10 border-black border-2 w-[200px] lg:w-[300px] h-[100px] rounded-md" placeholder="Digite uma mensagem" >
                          
                           
                          </textarea>
-                         <input type="button" className="bg-green-500 p-2 h-[50px] w-[200px] rounded-md" value="Enviar" />
+                         <input type="button" className="bg-green-500 p-2 h-[50px] w-[200px] rounded-md relative top-16" value="Enviar" />
                       </form>
                    </div>
                    <div className="flex justify-center ">
-                      <button onClick={fecharModal} className= "text-black  w-[200px] relative left-32 bottom-[400px] lg:relative lg:left-[180px] lg:bottom-[400px] text-4xl  p-2 mb-5">X</button>
+                      <button onClick={fecharModal} className= "text-gray-500  w-[200px] relative left-32 bottom-[400px] lg:relative lg:left-[180px] lg:bottom-[400px] text-2xl  p-2 mb-5">X</button>
                    </div>
               </div>
            </div>

@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   description: "A ESsoftware é especializada no desenvolvimento de sites institucionais e landing pages de alta performance, utilizando as melhores tecnologias do mercado",
 
     icons: {
-      icon: "/fivicon.icon", // Ícone padrão
-      shortcut: "/favicon.ico", // Ícone de atalho (iOS)
+      icon: "/icon.png", // Ícone padrão
+      shortcut: "/icon.png", // Ícone de atalho (iOS)
       apple: "/apple-touch-icon.png", // Ícone para dispositivos Apple (opcional)
     },
   };
